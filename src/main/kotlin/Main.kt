@@ -3,10 +3,14 @@ package com
 fun main() {
     println("== 명언 앱 ==")
 
+    var lastId = 0
+
     while (true) {
         print("명언)")
 
         val input = readlnOrNull()!!.trim()
+
+        val id = ++lastId
 
         if (input == "종료")
             break
